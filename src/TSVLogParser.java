@@ -23,7 +23,7 @@ public class TSVLogParser {
                 if (field.length != 6) continue; // Filed number validation
                 int id = Integer.parseInt(field[0]);
                 String characterName = field[1];
-                Stufe stufe = Stufe.valueOf(field[2].toUpperCase());
+                Stufe stufe = Stufe.valueOf(field[2]);
                 String description = field[3];
                 LocalDate date = LocalDate.parse(field[4]);
                 Double kraftPunkte = Double.parseDouble(field[5]);
